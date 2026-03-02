@@ -14,7 +14,7 @@ class LibraryScreen extends StatelessWidget {
     // 1- Read the global song repository
     SongRepository songRepository = context.read<SongRepository>();
     List<Song> songs = songRepository.fetchSongs();
- 
+  
     // 3 - Watch the global player state
     PlayerState playerState = context.watch<PlayerState>();
 
